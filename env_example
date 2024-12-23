@@ -1,0 +1,11 @@
+# Copy this file and name it .env
+
+API_INSTANCE=pk1_...
+API_SECRET=sk1_...
+DOMAIN=example.com
+
+# Optional
+SUBDOMAIN=funny-long-subdomain
+
+# Optional (though this is probably why you're using this tool at all because you don't have ports 80 & 443 for letsencrypt/certbot)
+PORT=6969
