@@ -18,7 +18,7 @@ await fetch(test_url).then((req) => {
     if (req.status === 200) {
         ssl_active = true;
     }
-});
+}).catch(() => {});
 
 if (!ssl_active) {
     const certs = await (await fetch(`https://api.porkbun.com/api/json/v3/ssl/retrieve/${env.DOMAIN}`, {
